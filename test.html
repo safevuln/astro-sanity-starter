@@ -1,0 +1,5 @@
+<html><body><h1>CVE-2025-25616 mô tả một lỗ hổng Kiểm soát truy cập sai trong Unifiedtransform 2.0. Lỗ hổng này cho phép sinh viên sửa đổi các quy tắc cho kỳ thi. Điểm cuối bị ảnh hưởng là `/exams/edit-rule?exam_rule_id=1`.
+
+Về cơ bản, sinh viên, những người không nên có quyền này, có thể truy cập và thay đổi các quy tắc kỳ thi thông qua điểm cuối được chỉ định. Điều này có thể là do thiếu xác thực hoặc ủy quyền thích hợp tại điểm cuối này. Ví dụ: hệ thống có thể không kiểm tra xem người dùng có quyền quản trị hoặc quyền sửa đổi quy tắc kỳ thi hay không trước khi cho phép họ thực hiện các thay đổi.
+
+Hậu quả của lỗ hổng này là nghiêm trọng, vì sinh viên có thể sửa đổi các quy tắc kỳ thi để có lợi cho họ, làm suy yếu tính toàn vẹn của quy trình đánh giá. Điều này có thể bao gồm việc thay đổi thời gian, sửa đổi trọng số câu hỏi hoặc thậm chí thay đổi tiêu chí chấm điểm.</h1></body></html>
